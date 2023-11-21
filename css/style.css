@@ -79,7 +79,7 @@ transition: 2.5s ease all;
 
 
 .banner-row{
-	display:;
+	display:block;
 	flex-wrap:nowrap;
     padding-top:0px;
 	
@@ -134,7 +134,7 @@ transition: 2.5s ease all;
 .about-col p{
 	text-align:justify;
 	line-height:4vh;
-	font-style:;
+	/* font-style:; */
 	font-size:21px;
 	font-weight:600;
 	padding:30px 0;
@@ -142,7 +142,7 @@ transition: 2.5s ease all;
 
 /*------skill section*/
 .skill-row{
-	display:;
+	/* display:; */
 	padding:0px 0;
 }
 .skill-col{
@@ -152,7 +152,7 @@ transition: 2.5s ease all;
 }
 /*----Education-section-----*/
 .Education-row{
-	display:;
+	display:block;
 	
 	padding:30px 0;
 	margin:auto;
@@ -175,7 +175,7 @@ transition: 2.5s ease all;
 }
 /*---contact-section*/
 .contact-row{
-   display:;
+   /* display:; */
    flex-wrap:nowrap;
 }
 .contact-col{
@@ -389,7 +389,7 @@ transition:2.5s ease all;
 .about-col p{
 	text-align:center;
 	line-height:4vh;
-	font-style:;
+	/* font-style:; */
 	font-size:25px;
 	font-weight:600;
 	padding:30px 0;
@@ -654,7 +654,7 @@ transition:2.5s ease all;
 .about-col p{
 	text-align:center;
 	line-height:6vh;
-	font-style:;
+	/* font-style:; */
 	font-size:25px;
 	font-weight:600;
 	padding:30px 0;
@@ -751,7 +751,7 @@ transition:2.5s ease all;
     /* border:2px solid; */
 	position:relative;
 	box-shadow:0 0 10px #ccc;
-	overflow:hidden;.project-card
+	overflow:hidden;
 }
 
 .project-card::after{
