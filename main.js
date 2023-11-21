@@ -156,5 +156,27 @@ let curser=document.querySelector(".curser");
 // })
 	
 	
+	let up=document.querySelector('.up')
+	
+	window.addEventListener('scroll',(e)=>{
+        // console.log(window.pageYOffset)
+  
+		if(pageYOffset>140){
+             up.style.display='flex'
+			 
+		}
+		else{
+			up.style.display='none'
+		}
+		
+
+	})
 	
 	
+	let load=document.querySelector('.load')
+	
+	window.addEventListener('load',(e)=>{
+		
+		load.style.display='none'
+		
+	})
