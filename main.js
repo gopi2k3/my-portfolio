@@ -50,75 +50,61 @@ let bodysec=document.querySelector("body");
 
 let projsec=document.querySelector(".project-section");
 
-let count=0;
+let icons=document.querySelectorAll('.fas')
+
+// let moon=document.querySelector('.fa-moon')
+
+let nav=document.querySelectorAll('.nav-content')
+
 lightbtn.addEventListener("click",function(){
 	
 	
 	
-	count++;
+
 	
-	if(count==1){
+	
 		
-		lightbtn.classList.add("btnclr");
-	aboutsec.classList.add("lightmood");
-	skillsec.classList.add("lightmood");
-	contactsec.classList.add("lightmood");
-	trainnesec.classList.add("lightmood");
-	edusec.classList.add("lightmood");
-	banner.classList.add("lightmood");
-	headnav.classList.add("lightmood");
-	bodysec.classList.add("lightmood");
-	projsec.classList.add("lightmood");
+		// lightbtn.classList.toggle("btnclr");
+	aboutsec.classList.toggle("lightmood");
+	skillsec.classList.toggle("lightmood");
+	contactsec.classList.toggle("lightmood");
+	trainnesec.classList.toggle("lightmood");
+	edusec.classList.toggle("lightmood");
+	banner.classList.toggle("lightmood");
+	headnav.classList.toggle("lightmood");
+	bodysec.classList.toggle("lightmood");
+	projsec.classList.toggle("lightmood");
+
+	
+
+	icons.forEach((e)=>{
+		e.classList.toggle('dark')
+	})
+
+	// moon.classList.toggle('dark')
 	
 	
 	// ancher.classList.add("lightmood")
 	let ancher=document.querySelectorAll(".nav-content");
 
 ancher.forEach((e)=>{
-	e.classList.add("lightmood");
+	e.classList.toggle("lightmood");
 })
 
-	}
+
+nav.forEach((e)=>{
+	e.classList.toggle('dark')
+})
 	
-	else{
-		count=0;
-		lightbtn.classList.remove("btnclr");
-		aboutsec.classList.remove("lightmood");
-		skillsec.classList.remove("lightmood");
-		contactsec.classList.remove("lightmood");
-		trainnesec.classList.remove("lightmood");
-		edusec.classList.remove("lightmood");
-		banner.classList.remove("lightmood");
-		headnav.classList.remove("lightmood");
-		bodysec.classList.remove("lightmood");
-		projsec.classList.remove("lightmood");
-		// projsec.classList.remove("project-section");
-		
-		
-		
-			let ancher=document.querySelectorAll(".nav-content");
-
-ancher.forEach((e)=>{
-	e.classList.remove("lightmood");
-})
-	}
+	
+	
 	
 	
 	
 	
 })
 
-// var typed=new Typed(".my-name",{
-	
-	// strings:["Gopi"],
-	// typeSpeed:150,
-	// backSpeed:150,
-	// loop:true
-// })
 
-
-
-// mouse
 
 
 
