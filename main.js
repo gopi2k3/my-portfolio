@@ -166,3 +166,10 @@ let curser=document.querySelector(".curser");
 		load.style.display='none'
 		
 	})
+
+let title=false
+	setInterval(()=>{
+		document.title=title? 'Portfolio':'Made by Gopi'
+	
+		title=!title
+	},2000)
