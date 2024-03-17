@@ -1,175 +1,100 @@
-let btn=document.querySelector("#btn");
+let headBtn=document.querySelector('.head-icon')
+let nav=document.querySelector('.nav2')
 
-let change=document.querySelector(".total1")
-
-
-btn.addEventListener('click',function(){
-	
-	
-	change.classList.toggle("active");
-	
-	
-	
+headBtn.addEventListener('click',()=>{
+   nav.classList.toggle('active')
 })
-	
 
-		
-		let all=document.querySelectorAll(".nav2-content")
-		
-		console.log(all)
-		all.forEach(e=>{
-			
-			e.addEventListener('click',function(){
-				
-				change.classList.remove("active")
-			})
-		})
-	
+let headLi=document.querySelectorAll('.head-li')       //resposive nav bar ==============
 
-
-
-
-let lightbtn=document.querySelector(".mood");
-
-let banner=document.querySelector(".banner-sec");
-
-
-let headnav=document.querySelector(".head-sec")
-
-let aboutsec=document.querySelector(".about-sec")
-
-let skillsec=document.querySelector(".skill-sec");
-
-let edusec=document.querySelector(".Education-sec");
-
-let trainnesec=document.querySelector(".trainee-sec");
-
-let contactsec=document.querySelector(".contact-sec")
-
-let bodysec=document.querySelector("body");
-
-let projsec=document.querySelector(".project-section");
-
-let icons=document.querySelectorAll('.fas')
-
-// let moon=document.querySelector('.fa-moon')
-
-let nav=document.querySelectorAll('.nav-content')
-
-lightbtn.addEventListener("click",function(){
-	
-	
-	
-
-	
-	
-		
-		// lightbtn.classList.toggle("btnclr");
-	aboutsec.classList.toggle("lightmood");
-	skillsec.classList.toggle("lightmood");
-	contactsec.classList.toggle("lightmood");
-	trainnesec.classList.toggle("lightmood");
-	edusec.classList.toggle("lightmood");
-	banner.classList.toggle("lightmood");
-	headnav.classList.toggle("lightmood");
-	bodysec.classList.toggle("lightmood");
-	projsec.classList.toggle("lightmood");
-
-	
-
-	icons.forEach((e)=>{
-		e.classList.toggle('dark')
-	})
-
-	// moon.classList.toggle('dark')
-	
-	
-	// ancher.classList.add("lightmood")
-	let ancher=document.querySelectorAll(".nav-content");
-
-ancher.forEach((e)=>{
-	e.classList.toggle("lightmood");
+headLi.forEach((e)=>{
+    e.addEventListener('click',()=>{
+        nav.classList.remove('active')
+    })
 })
 
 
-nav.forEach((e)=>{
-	e.classList.toggle('dark')
-})
-	
-	
-	
-	
-	
-	
-	
-})
+// document.body.addEventListener('click',()=>{
 
+// nav.classList.remove('active')
 
-
-
-
-let curser=document.querySelector(".curser");
-
-// console.log(curser)
-
-// var time;
-// document.addEventListener('mousemove',(e)=>{
-	
-	// let a=e.pageX+"px";
-	// let b=e.pageY+"px";
-	
-   
-   // curser.style.top=b;
-   // curser.style.left=a;
-	
-	// curser.style.display="block";
-	
-	
-	// function mouseOut(){
-		
-		// curser.style.display="none";
-		
-	// }
-	 // clearTimeout(time)
-	 
-   // time=setTimeout(mouseOut,1000);
-	
-	// })
-
-// document.addEventListener("mouseout",()=>{
-	
-	// curser.style.display="none";
 // })
-	
-	
-	let up=document.querySelector('.up')
-	
-	window.addEventListener('scroll',(e)=>{
-        // console.log(window.pageYOffset)
+
+
+
+                         //Dark mood =============
+
+
+                             
+let moodIcon=document.querySelector('.dark-mood')
+let sun =document.querySelector('.sun')
+let totalChange=document.querySelectorAll('.change-mood')
+
+moodIcon.addEventListener('click',()=>{
+    // sun.classList.toggle('dark')
+
+ totalChange.forEach((e)=>{
+        e.classList.toggle('dark')
+    })
+
+    
+})
+
+
+
+                                       //Arrow up
+
+let up=document.querySelector('.arrow')
+
+up.addEventListener('Click',()=>{
+    window.scrollTo({top:0,behavior:'smooth'})
+})
+
+ window.addEventListener('scroll',(e)=>{
+                                       
+ if(pageYOffset==0){
+        up.style.display='none'
+ }
+ else if(pageYOffset>140){
+         up.style.display='flex'
+                                             
+}
+else{
+        up.style.display='none'
+    }
+                                        
+    })
+
+
+
+
+
+
+
+
+
   
-		if(pageYOffset>140){
-             up.style.display='flex'
-			 
-		}
-		else{
-			up.style.display='none'
-		}
-		
 
-	})
-	
-	
-	let load=document.querySelector('.load')
-	
-	window.addEventListener('load',(e)=>{
-		
-		load.style.display='none'
-		
-	})
 
-let title=false
-	setInterval(()=>{
-		document.title=title? 'Portfolio':'Made by Gopi'
-	
-		title=!title
-	},2000)
+    let a=false
+
+
+    setInterval(()=>{
+
+        document.title=a? 'Portfolio':'Gopi'
+        a=!a
+    },2000)
+
+
+
+
+    let headI=document.querySelector('.head-icon')
+   let one=document.querySelector('.sp1')
+   let two=document.querySelector('.sp2')
+   let three=document.querySelector('.sp3')
+    headI.addEventListener('click',()=>{
+        one.classList.toggle('active1')
+        two.classList.toggle('active2')
+        three.classList.toggle('active3')
+    })
+
