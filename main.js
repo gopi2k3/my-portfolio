@@ -14,11 +14,11 @@ headLi.forEach((e)=>{
 })
 
 
-// document.body.addEventListener('click',()=>{
+document.querySelector('.nav2').addEventListener('click',()=>{
 
-// nav.classList.remove('active')
+nav.classList.remove('active')
 
-// })
+})
 
 
 
@@ -88,13 +88,11 @@ else{
 
 
 
-    let headI=document.querySelector('.head-icon')
-   let one=document.querySelector('.sp1')
-   let two=document.querySelector('.sp2')
-   let three=document.querySelector('.sp3')
-    headI.addEventListener('click',()=>{
-        one.classList.toggle('active1')
-        two.classList.toggle('active2')
-        three.classList.toggle('active3')
-    })
-
+  let headIcon=document.querySelector('.head-icon')
+let heaIcons=document.querySelectorAll('.headIcon')
+  headIcon.addEventListener('click',()=>{
+    console.log('click')
+     heaIcons.forEach((e)=>{
+        e.classList.toggle('IconChange')
+      })
+  })

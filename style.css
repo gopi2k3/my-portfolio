@@ -314,8 +314,12 @@ header.dark{
 }
 .head-icon i{
     color: orange;
-    font-size: 20px;
+    font-size: 45px;
     font-weight: 700;
+    position: absolute;
+    top: 19px;
+    right: 11px;
+
 }
 
 .nav2{
@@ -980,7 +984,7 @@ header.dark{
 .active3{
     transition: 0.2s ease all;
 
-    transform: rotate(-50deg) translateY(-10px);
+    transform: rotate(-50deg) translateY(-11px) translateX(1px);
 }
 .active2{
     transition: 0.2s ease all;
@@ -988,5 +992,25 @@ header.dark{
 }
 .active1{
     transition: 0.2s ease all;
-    transform: rotate(50deg) translateY(10px);
+    transform: rotate(50deg) translateY(11px) translateX(1px);
+}
+
+/* 
+.head-icon-2{
+    opacity: 0;
+    transition: 0.5s ease all;
+}
+
+.head-icon-1.IconChange{
+    opacity: 0;
+} */
+
+.bi-list.IconChange{
+    opacity: 0;
+}
+.bi-x-lg{
+    opacity: 0;
+}
+.bi-x-lg.IconChange{
+    opacity: 1;
 }
